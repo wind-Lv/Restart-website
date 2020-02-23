@@ -1,0 +1,33 @@
+{% extends "/common/layout.html" %}
+
+{% block content %}
+
+<div class="container">
+        <div class="row">
+            <div class="span12">
+                <form action="/sign_up" method="POST" accept-charset="UTF-8" style="text-align:center">
+                    <h2>欢迎注册Orange会员</h2><br>
+                    <p>注册一个新用户</p><br><br><hr><br>
+                    <input type="text" name="username" placeholder="请输入用户名"><br><br>
+                    <input type="password" name="pw" placeholder="请输入密码"><br><br>
+                    <input type="password" name="pws" placeholder="请再次输入密码"><br><br>
+                    <button type="submit" style="width: 219px;">注册</button><h1><br><br></h1>
+                </form>
+                <div class="container">
+                        <div class="row">
+                            <div class="span12">
+                                <div class="alert">
+                                     <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <h4>
+                                        警告!<small>warning</small>
+                                    </h4> <strong>警告!</strong> 请不要滥注册.谢谢配合.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

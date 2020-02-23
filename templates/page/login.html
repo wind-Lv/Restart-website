@@ -1,0 +1,46 @@
+{% extends "/common/layout.html" %}
+
+{% block content %}
+<br><br><br>
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<h1>
+				登录
+				<small>Login in
+			</h1>
+		</div>
+	</div>
+</div>
+<br><br><br><br><br><br><br><br>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span4">
+		</div>
+		<div class="span4">
+			<form class="form-horizontal" method="POST" accept-charset="UTF-8">
+				<div class="control-group">
+					 <label class="control-label" for="inputEmail">用户</label>
+					<div class="controls">
+						<input id="text" type="text" name='user' />
+					</div>
+				</div>
+				<div class="control-group">
+					 <label class="control-label" for="inputPassword">密码</label>
+					<div class="controls">
+						<input id="inputPassword" type="password" name='password' />
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+						 <button type="submit" class="btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;登陆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="span4">
+		</div>
+	</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock %}

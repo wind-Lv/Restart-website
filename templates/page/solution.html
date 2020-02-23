@@ -1,0 +1,39 @@
+{% extends "/common/layout.html" %}
+
+{% block content %}
+
+<div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1>解方程组<small> Solutions of equations</small></h1>
+                <br><hr><br>
+                <form action="/solution" method="POST" accept-charset="UTF-8"> 
+
+                    方程1<textarea style="width:920px;height:24px;" name="fc1"></textarea>
+                    方程2<textarea style="width:920px;height:24px;" name="fc2"></textarea>
+                    <input type="submit" style="width: 100px;height: 30px; text-align:center">
+
+                </form>
+                <hr>
+                <br>
+                <h2>结果<small> results</small></h2>
+                <br>
+                {{results}}
+                <br><br><br><br>
+                <div class="container">
+                        <div class="row">
+                            <div class="span12">
+                                <div class="alert">
+                                     <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <h4>
+                                        警告!<small>warning</small>
+                                    </h4> <strong>警告!</strong> 输入前需要把方程化简. 如2x+y=2 ,化为:2*x+y-2 .
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

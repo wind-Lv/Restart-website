@@ -1,0 +1,29 @@
+{% extends "/common/layout.html" %}
+
+
+{% block content %}
+
+<script language="javascript">
+      function MsgBox()
+      {
+      alert("反馈成功！感谢您的反馈！");
+      }
+      </script>
+
+<div class="container">
+	<div class="row">
+		<div class="span12">
+            <h1>问题反馈<small>Problem of Feedback</small></h1>
+            <form action="/feedback" method="POST" accept-charset="UTF-8">
+                  <textarea style="width:920px;height:500px;" name="text"></textarea>
+                  
+                  <input type="submit" style="width: 100px;height: 30px; text-align:center" onclick="MsgBox()">
+                  
+            </form>
+            <br>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}
